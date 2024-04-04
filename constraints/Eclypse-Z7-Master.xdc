@@ -88,3 +88,11 @@ set_property -dict { PACKAGE_PIN AB20 IOSTANDARD LVCMOS18 } [get_ports { o_dac_d
 #set_property -dict { PACKAGE_PIN U15  } [get_ports { syzygy_b_s[25] }]; #IO_L15P_T2_DQS Sch=syzygy_b_s[25]
 #set_property -dict { PACKAGE_PIN V17  } [get_ports { syzygy_b_s[26] }]; #IO_L16N_T2 Sch=syzygy_b_s[26]
 #set_property -dict { PACKAGE_PIN U17  } [get_ports { syzygy_b_s[27] }]; #IO_L16P_T2 Sch=syzygy_b_s[27]
+
+## RGB LEDs
+set_property -dict { PACKAGE_PIN A17   IOSTANDARD LVCMOS33 } [get_ports { o_led0_b }]; #IO_L9N_T1_DQS_AD3N Sch=led0_b
+set_property -dict { PACKAGE_PIN B16   IOSTANDARD LVCMOS33 } [get_ports { o_led0_g }]; #IO_L8P_T1_AD10P Sch=led0_g
+set_property -dict { PACKAGE_PIN B17   IOSTANDARD LVCMOS33 } [get_ports { o_led0_r }]; #IO_L8N_T1_AD10N Sch=led0_r
+set_property -dict { PACKAGE_PIN A16   IOSTANDARD LVCMOS33 } [get_ports { o_led1_b }]; #IO_L9P_T1_DQS_AD3P Sch=led1_b
+set_property -dict { PACKAGE_PIN A18   IOSTANDARD LVCMOS33 } [get_ports { o_led1_g }]; #IO_L10P_T1_AD11P Sch=led1_g
+set_property -dict { PACKAGE_PIN A19   IOSTANDARD LVCMOS33 } [get_ports { o_led1_r }]; #IO_L10N_T1_AD11N Sch=led1_r
